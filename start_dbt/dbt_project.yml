@@ -40,3 +40,8 @@ models:
     gold:
       +materialized: view
       +schema: gold  
+
+seeds:
+  start_dbt:
+    # Config indicated by + and applies to all files under seeds/
+    +schema: bronze
