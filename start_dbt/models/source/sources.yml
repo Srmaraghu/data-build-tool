@@ -2,7 +2,7 @@ version: 2
 
 sources:
     - name: source # Name of the source in the dbt project is "source" held by me
-      database: dbt #catalog in which the source is located
+      database: '{{ target.catalog }}' #catalog in which the source is located
       schema: source
       tables:
         - name: fact_sales 

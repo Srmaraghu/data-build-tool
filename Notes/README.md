@@ -1,6 +1,6 @@
 # DBT Learning Notes
 
-This folder stores short, refined notes you ask me to generate.
+This folder stores short, refined notes.
 
 ## Rules
 - Each note is concise and cheat-sheet style.
@@ -18,3 +18,4 @@ This folder stores short, refined notes you ask me to generate.
 - 08_seeds_analysis_and_artifacts.md
 - 09_jinja_macros_and_silver_obt.md
 - 10_dbt_snapshots_scd2_and_history_tracking.md
+- 11_dbt_deployment_environments_lineage_and_git_workflow.md
