@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: silver_returns
+    columns:
+      - name: sales_id
+        data_tests:
+          - not_null
+
+      - name: date_sk
+        data_tests:
+          - not_null
+
+      - name: store_sk
+        data_tests:
+          - not_null
+
+      - name: product_sk
+        data_tests:
+          - not_null
+
+      - name: returned_qty
+        data_tests:
+          - not_null
+          - test_generic_non_negative
+
+      - name: return_reason
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Damaged', 'Defective', 'Late Delivery', 'Wrong Item', 'Changed Mind']
+
+      - name: refund_amount
+        data_tests:
+          - not_null
+          - test_generic_non_negative
+
+      - name: is_valid_return
+        data_tests:
+          - not_null

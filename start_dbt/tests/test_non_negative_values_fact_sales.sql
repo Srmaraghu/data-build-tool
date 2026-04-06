@@ -1,2 +1,2 @@
 SELECT * FROM {{ ref("bronze_sales")}}
-WHERE gross_amount < 0 AND net_amount < 0 
+WHERE gross_amount < 0 OR net_amount < 0 
