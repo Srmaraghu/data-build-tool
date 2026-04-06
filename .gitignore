@@ -13,6 +13,5 @@ logs/
 profiles.yml
 .user.yml
 transcripts/**
-notes/**
 scripts/**
 .env

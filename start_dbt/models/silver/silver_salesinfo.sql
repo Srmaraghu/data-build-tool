@@ -25,6 +25,7 @@ SELECT
     s.calculated_gross_amount,
     p.category,
     c.gender
+FROM sales s
 LEFT JOIN product p ON s.product_sk = p.product_sk
 LEFT JOIN customer c ON s.customer_sk = c.customer_sk
 )
